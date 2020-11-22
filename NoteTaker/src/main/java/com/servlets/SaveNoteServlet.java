@@ -31,9 +31,6 @@ public class SaveNoteServlet extends HttpServlet {
 			session.beginTransaction();
 			session.save(note);
 			session.getTransaction().commit();
-//		response.getWriter().println("<h1 style='text-align:center; margin-top:25px;'>Note Added Successfully</h1>");
-//		response.getWriter().println(
-//				"<h2 style='text-align:center; margin-top:25px;'><a href='all-notes.jsp'>Show All Notes</a></h2>");
 			RequestDispatcher rd = request.getRequestDispatcher("add-success.jsp");
 			rd.forward(request, response);
 		} catch (Exception e) {
