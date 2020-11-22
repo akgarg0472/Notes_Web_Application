@@ -4,9 +4,9 @@
         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
-		<property name="connection.url">jdbc:mysql://localhost:3306/notes</property>
-		<property name="connection.username">root</property>
-		<property name="connection.password">Garg@2000</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/database-name</property>
+		<property name="connection.username">database-username</property>
+		<property name="connection.password">database-password</property>
 		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="hbm2ddl.auto">update</property>
